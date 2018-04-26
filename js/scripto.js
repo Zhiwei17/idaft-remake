@@ -1,169 +1,251 @@
 $(document).ready(function () {
 
-    //-------------------------------------------------------1
-    $("#work_it").click(function () {
-        if (au_work_it.paused == false) {
-            au_work_it.pause();
-
+    //-------------------------------------------------------1.1
+    $("#work_it_1").click(function () {
+        if (au_work_it_1.paused == false) {
+            au_work_it_1.pause();
         } else {
-            au_work_it.cloneNode(true).play();
-
+            au_work_it_1.cloneNode(true).play();
         }
-
     })
-    $("#make_it").click(function () {
-        if (au_make_it.paused == false) {
-            au_make_it.pause();
-
+    $("#make_it_1").click(function () {
+        if (au_make_it_1.paused == false) {
+            au_make_it_1.pause();
         } else {
-            au_make_it.cloneNode(true).play();
-
+            au_make_it_1.cloneNode(true).play();
         }
-
     })
-    $("#do_it").click(function () {
-        if (au_do_it.paused == false) {
-            au_do_it.pause();
-
+    $("#do_it_1").click(function () {
+        if (au_do_it_1.paused == false) {
+            au_do_it_1.pause();
         } else {
-            au_do_it.cloneNode(true).play();
-
+            au_do_it_1.cloneNode(true).play();
         }
-
     })
-    $("#makes_us").click(function () {
-        if (au_makes_us.paused == false) {
-            au_makes_us.pause();
-
+    $("#makes_us_1").click(function () {
+        if (au_makes_us_1.paused == false) {
+            au_makes_us_1.pause();
         } else {
-            au_makes_us.cloneNode(true).play();
-
+            au_makes_us_1.cloneNode(true).play();
         }
-
     })
-    
-    //-------------------------------------------------------2
-    $("#harder").click(function () {
-        if (au_harder.paused == false) {
-            au_harder.pause();
 
+    //-------------------------------------------------------1.2
+    $("#harder_1").click(function () {
+        if (au_harder_1.paused == false) {
+            au_harder_1.pause();
         } else {
-            au_harder.cloneNode(true).play();
-
+            au_harder_1.cloneNode(true).play();
         }
-
     })
-    $("#better").click(function () {
-        if (au_better.paused == false) {
-            au_better.pause();
-
+    $("#better_1").click(function () {
+        if (au_better_1.paused == false) {
+            au_better_1.pause();
         } else {
-            au_better.cloneNode(true).play();
-
+            au_better_1.cloneNode(true).play();
         }
-
     })
-    $("#faster").click(function () {
-        if (au_faster.paused == false) {
-            au_faster.pause();
-
+    $("#faster_1").click(function () {
+        if (au_faster_1.paused == false) {
+            au_faster_1.pause();
         } else {
-            au_faster.cloneNode(true).play();
-
+            au_faster_1.cloneNode(true).play();
         }
-
     })
-    $("#stronger").click(function () {
-        if (au_stronger.paused == false) {
-            au_stronger.pause();
-
+    $("#stronger_1").click(function () {
+        if (au_stronger_1.paused == false) {
+            au_stronger_1.pause();
         } else {
-            au_stronger.cloneNode(true).play();
-
+            au_stronger_1.cloneNode(true).play();
         }
-
     })
-    //-------------------------------------------------------3
-    $("#more_than").click(function () {
-        if (au_more_than.paused == false) {
-            au_more_than.pause();
-
+    //-------------------------------------------------------1.3
+    $("#more_than_1").click(function () {
+        if (au_more_than_1.paused == false) {
+            au_more_than_1.pause();
         } else {
-            au_more_than.cloneNode(true).play();
-
+            au_more_than_1.cloneNode(true).play();
         }
-
     })
-    $("#hour").click(function () {
-        if (au_hour.paused == false) {
-            au_hour.pause();
-
+    $("#hour_1").click(function () {
+        if (au_hour_1.paused == false) {
+            au_hour_1.pause();
         } else {
-            au_hour.cloneNode(true).play();
-
+            au_hour_1.cloneNode(true).play();
         }
-
     })
-    $("#our").click(function () {
-        if (au_our.paused == false) {
-            au_our.pause();
-
+    $("#our_1").click(function () {
+        if (au_our_1.paused == false) {
+            au_our_1.pause();
         } else {
-            au_our.cloneNode(true).play();
-
+            au_our_1.cloneNode(true).play();
         }
-
     })
-    $("#never").click(function () {
-        if (au_never.paused == false) {
-            au_never.pause();
-
+    $("#never_1").click(function () {
+        if (au_never_1.paused == false) {
+            au_never_1.pause();
         } else {
-            au_never.cloneNode(true).play();
-
+            au_never_1.cloneNode(true).play();
         }
-
     })
     //-------------------------------------------------------4
-    $("#ever").click(function () {
-        if (au_ever.paused == false) {
-            au_ever.pause();
-
+    $("#ever_1").click(function () {
+        if (au_ever_1.paused == false) {
+            au_ever_1.pause();
         } else {
-            au_ever.cloneNode(true).play();
-
+            au_ever_1.cloneNode(true).play();
         }
-
     })
-    $("#after").click(function () {
-        if (au_after.paused == false) {
-            au_after.pause();
-
+    $("#after_1").click(function () {
+        if (au_after_1.paused == false) {
+            au_after_1.pause();
         } else {
-            au_after.cloneNode(true).play();
-
+            au_after_1.cloneNode(true).play();
         }
-
     })
-    $("#work_is").click(function () {
-        if (au_work_is.paused == false) {
-            au_work_is.pause();
-
+    $("#work_is_1").click(function () {
+        if (au_work_is_1.paused == false) {
+            au_work_is_1.pause();
         } else {
-            au_work_is.cloneNode(true).play();
-
+            au_work_is_1.cloneNode(true).play();
         }
-
     })
-    $("#over").click(function () {
-        if (au_over.paused == false) {
-            au_over.pause();
-
+    $("#over_1").click(function () {
+        if (au_over_1.paused == false) {
+            au_over_1.pause();
         } else {
-            au_over.cloneNode(true).play();
-
+            au_over_1.cloneNode(true).play();
         }
-
+    })
+    
+    //--------------------------------------2.1
+    //-------------------------------------------------------1
+    $("#work_it_2").click(function () {
+        if (au_work_it_2.paused == false) {
+            au_work_it_2.pause();
+        } else {
+            au_work_it_2.cloneNode(true).play();
+        }
+    })
+    $("#make_it_2").click(function () {
+        if (au_make_it_2.paused == false) {
+            au_make_it_2.pause();
+        } else {
+            au_make_it_2.cloneNode(true).play();
+        }
+    })
+    $("#do_it_2").click(function () {
+        if (au_do_it_2.paused == false) {
+            au_do_it_2.pause();
+        } else {
+            au_do_it_2.cloneNode(true).play();
+        }
+    })
+    $("#makes_us_2").click(function () {
+        if (au_makes_us_2.paused == false) {
+            au_makes_us_2.pause();
+        } else {
+            au_makes_us_2.cloneNode(true).play();
+        }
     })
 
+    //-------------------------------------------------------2
+    $("#harder_2").click(function () {
+        if (au_harder_2.paused == false) {
+            au_harder_2.pause();
+        } else {
+            au_harder_2.cloneNode(true).play();
+        }
+    })
+    $("#better_2").click(function () {
+        if (au_better_2.paused == false) {
+            au_better_2.pause();
+        } else {
+            au_better_2.cloneNode(true).play();
+        }
+    })
+    $("#faster_2").click(function () {
+        if (au_faster_2.paused == false) {
+            au_faster_2.pause();
+        } else {
+            au_faster_2.cloneNode(true).play();
+        }
+    })
+    $("#stronger_2").click(function () {
+        if (au_stronger_2.paused == false) {
+            au_stronger_2.pause();
+        } else {
+            au_stronger_2.cloneNode(true).play();
+        }
+    })
+    //-------------------------------------------------------3
+    $("#more_than_2").click(function () {
+        if (au_more_than_2.paused == false) {
+            au_more_than_2.pause();
+        } else {
+            au_more_than_2.cloneNode(true).play();
+        }
+    })
+    $("#hour_2").click(function () {
+        if (au_hour_2.paused == false) {
+            au_hour_2.pause();
+        } else {
+            au_hour_2.cloneNode(true).play();
+        }
+    })
+    $("#our_2").click(function () {
+        if (au_our_2.paused == false) {
+            au_our_2.pause();
+        } else {
+            au_our_2.cloneNode(true).play();
+        }
+    })
+    $("#never_2").click(function () {
+        if (au_never_2.paused == false) {
+            au_never_2.pause();
+        } else {
+            au_never_2.cloneNode(true).play();
+        }
+    })
+    //-------------------------------------------------------4
+    $("#ever_2").click(function () {
+        if (au_ever_2.paused == false) {
+            au_ever_2.pause();
+        } else {
+            au_ever_2.cloneNode(true).play();
+        }
+    })
+    $("#after_2").click(function () {
+        if (au_after_2.paused == false) {
+            au_after_2.pause();
+        } else {
+            au_after_2.cloneNode(true).play();
+        }
+    })
+    $("#work_is_2").click(function () {
+        if (au_work_is_2.paused == false) {
+            au_work_is_2.pause();
+        } else {
+            au_work_is_2.cloneNode(true).play();
+        }
+    })
+    $("#over_2").click(function () {
+        if (au_over_2.paused == false) {
+            au_over_2.pause();
+        } else {
+            au_over_2.cloneNode(true).play();
+        }
+    })
+    
+    $("#beat").click(function () {
+        if (au_beat.paused == false) {
+            au_beat.pause();
+            au_beat.currentTime = 0;
+            $(this).css("background-color", "#016502");
+        } else {
+            au_beat.play();
+            $(this).css("background-color", "#003c01");
+        }
+    })
+    
 });

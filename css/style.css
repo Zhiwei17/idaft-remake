@@ -1,12 +1,27 @@
-#fila1, #fila2, #fila3, #fila4 {
-    display: flex;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
-#work_it, #make_it, #do_it, #makes_us ,#harder, #better, #faster, #stronger, #more_than, #hour, #our, #stronger, #never, #ever, #after, #work_is, #over{
-    color: red;
+.filas{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    font-weight: bold;
+    padding: 5px;
+    color: #02f800;
+    border: 2px solid #02f800;
     cursor: pointer;
     width: 100px;
     height: 100px;
-    background-color: green;
+    background-color: #016502;
     margin: 10px;
+}
+
+.button#beat, .button#high{
+    width: 220px;
 }
