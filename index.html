@@ -19,7 +19,7 @@
         <div data-role="header">
             <h1>iDaft Remake</h1>
         </div>
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content" id="normal">
             <div class="filas">
                 <div id="work_it_1" class="button">Work It
                     <audio id="au_work_it_1">
@@ -139,28 +139,11 @@
                 </audio>
                 </div>
             </div>
-            <div class="filas">
-                <div id="beat" class="button">BEAT
-                 <audio id="au_beat">
-                <source src="mp3/sounds/0_song.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-                </audio>
-                </div>
-                <div id="high" class="button">HIGH</div>
-            </div>
+          
         </div>
-        <div data-role="footer">
-            <h1>
-                <a href="#page2" data-transition="flow">footer</a>
-            </h1>
-        </div>
-    </div>
-
-    <div id="page2" data-role="page" data-theme="b">
-        <div data-role="header">
-            <h1>MEMES</h1>
-        </div>
-        <div role="main" class="ui-content">
+        
+          
+          <div role="main" class="ui-content" id="high">
             <div class="filas">
                 <div id="work_it_2" class="button">Work It
                     <audio id="au_work_it_2">
@@ -281,14 +264,19 @@
                 </div>
             </div>
         </div>
-        <div data-role="footer">
-            <a href="#home" data-transition="flow" data-direction="reverse">
-                <h1>icono</h1>
-            </a>
-        </div>
+        
+        <div class="filas">
+                <div class="button beat">BEAT
+                 <audio id="au_beat">
+                <source src="mp3/sounds/0_song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+                </div>
+                <div class="button high">HIGH</div>
+            </div>
+        
+        
     </div>
-
-
 
 </body>
 

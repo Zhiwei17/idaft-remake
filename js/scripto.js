@@ -237,7 +237,8 @@ $(document).ready(function () {
         }
     })
     
-    $("#beat").click(function () {
+    //-------------------------------------beat
+    $(".beat").click(function () {
         if (au_beat.paused == false) {
             au_beat.pause();
             au_beat.currentTime = 0;
@@ -246,6 +247,24 @@ $(document).ready(function () {
             au_beat.play();
             $(this).css("background-color", "#003c01");
         }
+    })
+    
+    //-------------------------------------high
+    var f = 0;
+    $(".high").click(function(){
+        if(f == 0){
+            $(this).css("background-color", "#003c01");
+            $("#high").css("display", "block");
+            $("#normal").css("display", "none");
+            f = 1;
+        }else{
+            $(this).css("background-color", "#016502");
+            $("#high").css("display", "none");
+            $("#normal").css("display", "block");
+            f = 0;
+        }
+        
+        
     })
     
 });
