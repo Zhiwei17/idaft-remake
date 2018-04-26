@@ -256,11 +256,14 @@ $(document).ready(function () {
             $(this).css("background-color", "#003c01");
             $("#high").css("display", "block");
             $("#normal").css("display", "none");
+            //$(".button").css("box-shadow", "0px 0px 30px 4px #0ff");
+            //$(".button.high, .button.beat").css("box-shadow", "0px 0px 0px 0px #000");
             f = 1;
         }else{
             $(this).css("background-color", "#016502");
             $("#high").css("display", "none");
             $("#normal").css("display", "block");
+            $("*").css("box-shadow", "0px 0px #000");
             f = 0;
         }
         
