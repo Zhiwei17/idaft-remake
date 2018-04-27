@@ -242,32 +242,37 @@ $(document).ready(function () {
         if (au_beat.paused == false) {
             au_beat.pause();
             au_beat.currentTime = 0;
-            $(this).css("background-color", "#016502");
+            $(this).css("background-color", "#66D3E8");
+            $(".button").css("box-shadow", "0px 0px 0px 0px #000");
         } else {
             au_beat.play();
-            $(this).css("background-color", "#003c01");
+            $(this).css("background-color", "#17C5E8");
+            $(".button").css("box-shadow", "0px 0px 30px 0px #4CE1FF");
+            $(".button.high, .button.beat").css("box-shadow", "0px 0px 0px 0px #000");
         }
     })
+
 
     //-------------------------------------high
     var f = 0;
     $(".high").click(function () {
         if (f == 0) {
-            $(this).css("background-color", "#003c01");
+            $(this).css("background-color", "#FFBE1A");
             $("#high").css("display", "block");
             $("#normal").css("display", "none");
-            //$(".button").css("box-shadow", "0px 0px 30px 4px #0ff");
-            //$(".button.high, .button.beat").css("box-shadow", "0px 0px 0px 0px #000");
             f = 1;
         } else {
-            $(this).css("background-color", "#016502");
+            $(this).css("background-color", "#FFCC4C");
             $("#high").css("display", "none");
             $("#normal").css("display", "block");
-            $("*").css("box-shadow", "0px 0px #000");
             f = 0;
         }
-
-
     })
 
+    $(".button").click(function () {
+        if (f == 1) {
+            $(this).css("box-shadow", "0px 0px 30px 0px #FFCC4C");
+            $(".high, .beat").css("box-shadow", "0px 0px 0px 0px #000");
+        }
+    })
 });

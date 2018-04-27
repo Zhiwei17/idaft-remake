@@ -1,34 +1,60 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
-.filas{
+.ui-page-theme-b{
+    background-color: #484349;
+}
+
+.filas {
     display: flex;
     justify-content: center;
 }
 
-.button{
+.button {
     font-weight: bold;
     padding: 5px;
-    color: #02f800;
-    border: 2px solid #02f800;
+    color: #F7F0F0;
+    /*border: 2px solid #02f800;*/
     cursor: pointer;
-    width: 100px;
-    height: 100px;
-    background-color: #016502;
-    margin: 10px;
+    width: 50%;
+   
+    background-color: white;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 0px;
 }
 
-.beat, .high{
-    width: 220px;
+.button:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
+.beat,
+.high {
+    width: 50%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-#high{
+.high{
+    background-color: #FFCC4C;
+}
+
+.beat{
+    background-color: #66D3E8;
+}
+
+.button.beat:after, .button.high:after{
+       padding-bottom: 0%;
+}
+
+#high {
     display: none;
 }
-
-
