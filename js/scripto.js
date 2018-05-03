@@ -89,18 +89,19 @@ $(document).ready(function () {
 
     //--------------------------------------2
     //-------------------------------------------------------2.1
+    
+    
+    //----------------------------------------cloneNode :( <-------- allé voy
     $("#work_it_2").click(function () {
-        au_work_it_2.cloneNode(true).play();
-            
         
-        //-----------------------------------------------------------------FUCK. <------------ AQUÍ
-        au_work_it_2.addEventListener("ended", function () {
-            alert("this shit is not workiiiiiinnnngggg lalallalalal");
+         au_work_it_2.addEventListener("ended", function () {
+            $("#work_it_2").css("box-shadow", "0px 0px 0px 0px #000");
         })
-
-
-
+         
+        au_work_it_2.play();
     })
+    
+        
     $("#make_it_2").click(function () {
 
         au_make_it_2.cloneNode(true).play();
