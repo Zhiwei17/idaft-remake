@@ -255,7 +255,7 @@ $(document).ready(function () {
     $(".beat").click(function () {
         if (au_beat.paused == true) {
             au_beat.play();
-            $(this).css("background-color", "#17C5E8");
+            $(this).css("background-color", "#00C1E8");
             //$(".button").css("box-shadow", "0px 0px 30px 0px #4CE1FF");
             b = 1;
         
@@ -273,7 +273,7 @@ $(document).ready(function () {
     var h = 0;
     $(".high").click(function () {
         if (h == 0) {
-            $(this).css("background-color", "#FFBE1A");
+            $(this).css("background-color", "#FFB600");
             $("#high").css("display", "block");
             $("#normal").css("display", "none");
             h = 1;
@@ -289,7 +289,7 @@ $(document).ready(function () {
     $(".button").click(function () {
     
         if (b == 1) {
-            $(this).css("box-shadow", "0px 0px 40px 0px #4CE1FF");
+            $(this).css("box-shadow", "0px 0px 20px 0px #4CE1FF");
             $(".high, .beat").css("box-shadow", "0px 0px 0px 0px #000");
         }
         if (h == 1) {
