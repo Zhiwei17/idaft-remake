@@ -1,12 +1,33 @@
 $(document).ready(function () {
+    //--- help
+    var help = 0;
+    $("#help").click(function () {
+        if (help == 0) {
+            $(".button").addClass("help");
+            $(".beat > span").addClass("buttonHelp");
+            $(".high > span").addClass("buttonHelp");
+            help = 1;
+            return;
+        } else {
+            $(".button").removeClass("help");
+            $(".beat > span").removeClass("buttonHelp");
+            $(".high > span").removeClass("buttonHelp");
+            help = 0;
+        }
+
+    });
 
     //-------------------------------------------1
     //-------------------------------------------------------1.1
     $("#work_it_1").click(function () {
         au_work_it_1.addEventListener("ended", function () {
+            //TODO this shit lol
+            //$(".button").addClass("help");
             $("#work_it_1").css("box-shadow", "0px 0px 0px 0px #000");
         })
         au_work_it_1.play();
+        //$(".button").removeClass("help");
+
 
     })
     $("#make_it_1").click(function () {
@@ -127,6 +148,7 @@ $(document).ready(function () {
 
 
     //----------------------------------------cloneNode :( 
+    //worworitworworitworkit workit effect
     $("#work_it_2").click(function () {
         //au_work_it_2.cloneNode(true).play();        
         au_work_it_2.addEventListener("ended", function () {
@@ -292,7 +314,7 @@ $(document).ready(function () {
             $(this).css("box-shadow", "0px 0px 20px 0px #4CE1FF");
             $(".high, .beat").css("box-shadow", "0px 0px 0px 0px #000");
         }
-        if (h == 1) {
+        if (h == 1 && b == 1) {
             $(this).css("box-shadow", "0px 0px 40px 0px #FFCC4C");
             $(".high, .beat").css("box-shadow", "0px 0px 0px 0px #000");
         }
@@ -301,9 +323,10 @@ $(document).ready(function () {
 var h = 0;
 var b = 0;
 //keypress
+//sloppy... all this to functions and then call them all lol ugry code bastard...
 $(document).keypress(function (event) {
 
-    if (event.charCode == 13) {
+    if (event.charCode == 32) {
         if (au_beat.paused == true) {
             au_beat.play();
             $(".beat").css("background-color", "#00C1E8");
@@ -321,7 +344,7 @@ $(document).keypress(function (event) {
 
 
 
-    if (event.charCode == 32) {
+    if (event.charCode == 13) {
         if (h == 0) {
             $(".high").css("background-color", "#FFB600");
             $("#high").css("display", "block");

@@ -14,18 +14,23 @@
     justify-content: center;
 }
 
-.button {
+.button, .beat, .high {
     font-weight: bold;
     padding: 5px;
-    color: #F7F0F0;
     /*border: 2px solid #02f800;*/
     cursor: pointer;
     width: 50%;
-
     background-color: white;
     margin: 5px;
     border-radius: 4px;
-    font-size: 0px;
+    font-size: 0;
+    position: relative;
+}
+
+.help{
+    color: darkslategrey;
+    font-size: 1em;
+    text-shadow: none;
 }
 
 .button:after {
@@ -44,12 +49,26 @@
     box-shadow: 0px 0px 0px 0px #000!important;
 }
 
+.beat {
+    background-color: #66D3E8;
+}
+
 .high {
     background-color: #FFDA7F;
 }
 
-.beat {
-    background-color: #66D3E8;
+.beat > span, .high > span{
+    float: right;
+    position: absolute;
+    bottom: 5;
+    right: 5;
+    font-size: 0px;
+}
+
+.buttonHelp{
+    color: darkslategrey;
+    font-size: 0.4em!important;
+    text-shadow: none;
 }
 
 .button.beat:after,
@@ -61,9 +80,20 @@
     display: none;
 }
 
+#help{
+    color: pink; 
+    cursor: pointer;
+}
+
+.help > span{           
+    float: right;
+    position: absolute;
+    bottom: 5;
+    right: 5;
+}
 
 @media screen and (min-width: 700px) {
-    .button {
+    .button, .beat, .high {
         width: 100px;
         height: 100px;
 
