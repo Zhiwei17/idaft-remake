@@ -80,11 +80,6 @@
     display: none;
 }
 
-#help{
-    color: pink; 
-    cursor: pointer;
-}
-
 .help > span{           
     float: right;
     position: absolute;
@@ -92,7 +87,7 @@
     right: 5;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
     .button, .beat, .high {
         width: 100px;
         height: 100px;
@@ -108,5 +103,10 @@
         width: 200px;
 
     }
+}
 
+@media screen and (max-width: 768px) {
+    #help{
+        display: none;
+    }
 }
